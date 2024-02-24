@@ -24,6 +24,9 @@
   <li><a href="#linux">Linux</a></li>
   <li><a href="#clonar-repositorio">Clonar Repositório</a></li>
   <li><a href="#executar-maven">Excecutar Maven</a></li>
+  <li><a href="#iniciar">Iniciar aplicação</a></li>
+  <li><a href="#testar-listar">Testar endpoint de listar fretes</a></li>
+  <li><a href="#testar-criar">Testar endpoint de criar frete</a></li>
   <li><a href="#tecnicas">Técnicas e tecnologias utilizadas</a></li>
   <li><a href="#licenca">Licença</a></li>
 </ul>
@@ -98,12 +101,35 @@ Digitar o comando:
  mvn clean install
 ```
 
-#### Iniciar aplicação
+<h3 id="iniciar">Iniciar aplicação</h3>
 
 Digitar o comando: 
 
 ```bash
  mvn spring-boot:run
+```
+
+<h3 id="testar-listar">Testar endpoint de listar fretes</h3>
+
+É possível testar com a ferramenta postman ou digitar o comando no prompt de comandos :
+
+```bash
+  curl http://localhost:8080/api/v1/fretes
+```
+
+Também é possível modificar a quantidade de registros alterando-se os parâmmetros da paginação <br/>
+que, por default, page=0 e size=5 :
+
+```bash
+  curl -G -d "page=0" -d "size=100" http://localhost:8080/api/v1/fretes
+```
+
+<h3 id="testar-criar">Testar endpoint de criar frete</h3>
+
+É possível testar com a ferramenta postman ou digitar o comando no prompt de comandos :
+
+```bash
+  curl -X POST http://localhost:8080/api/v1/fretes -H "Content-type:application/json" -d "{\"cubagem\":20.55, \"peso\":1000.00, \"distancia\":90.5, \"tempo\":2}"
 ```
 
 <h3 id="tecnicas">Técnicas e tecnologias utilizadas</h3>
@@ -119,6 +145,8 @@ Digitar o comando:
 * IntelliJ IDEA
 * PostMan
 
+<h3 id="autores">Autores</h3>
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/12829540?v=4" width=115><br><sub>Gabriel Mendes</sub>](https://github.com/gpmendes7)
 <h3 id="licenca">Licença</h3>
 
 [MIT](https://choosealicense.com/licenses/mit/)
