@@ -132,7 +132,7 @@ que, por default, page=0 e size=5 :
   curl -X POST http://localhost:8080/api/v1/fretes -H "Content-type:application/json" -d "{\"cubagem\":20.55, \"peso\":1000.00, \"distancia\":90.5, \"tempo\":2}"
 ```
 
-Ou passando os parâmetros diretos na requisição :
+Ou passando os parâmetros diretamente na requisição :
 
 ```bash
   curl "http://localhost:8080/api/v1/fretes?page=0&size=100"
