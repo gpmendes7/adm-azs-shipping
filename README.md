@@ -1,11 +1,38 @@
 # Transporta Aí
 
+
+<p align='center'>
+    <img src="/img/logo.png" alt="Foto Gabriel Mendes" />
+</p>
+
+![MarineGEO circle logo](/img/logo.png "MarineGEO logo")
+
+<p align='center'>
+    <img src="https://img.shields.io/badge/status-concluído-green" />    
+    <img src="https://img.shields.io/badge/java-17.0.6-blue" />
+    <img src="https://img.shields.io/badge/maven-3.8.3-yellow" />
+    <img src="https://img.shields.io/badge/lincença-mit-blue" />
+</p>
+
+## Índice
+
+<ul>
+  <li><a href="#descricao">Descrição</a></li>
+  <li><a href="#instalacao">Instalação</a></li>
+  <li><a href="#windows">Windows</a></li>
+  <li><a href="#linux">Linux</a></li>
+  <li><a href="#clonar-repositorio">Clonar Repositório</a></li>
+  <li><a href="#executar-maven">Excecutar Maven</a></li>
+</ul>
+
+<h2 id="descricao">Descrição</h2>
+
 API REST desenvolvida em Java para gerenciamento de dados relacionados a transportes e fretes.
 
 
-## Instalação
+<h2 id="instalacao">Instalação</h2>
 
-Instalar java e conferir versão instalada com o comando:
+Instalar java e conferir versão instalada com o comando :
 
 ```bash
 java -version
@@ -13,16 +40,16 @@ java -version
 
 Precisa atualizar a variável JAVA_HOME antes de rodar o Maven.
 
-### Windows
+<h3 id="windows">Windows</h3>
 
-Abrir o prompt de comandos ou o Windows PowerShell como adim e digitar o seguinte comando:
+Abrir o prompt de comandos ou o Windows PowerShell como adim e digitar o seguinte comando :
 
 ```bash
 setx /m JAVA_HOME <diretorio>
 ```
 
-Se por exemplo, o jdk está instalado no diretório "C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot",
-sustituir <diretorio> por "C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot":
+Se por exemplo, o jdk está instalado no diretório "C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot", <br/>
+sustituir &lt;diretorio&gt; por "C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot" :
 
 ```bash
 setx /m JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot"
@@ -34,7 +61,7 @@ Conferir se o valor foi alterado com o comando:
 echo %JAVA_HOME%
 ```
 
-### Linux
+<h3 id="linux">Linux</h3>
 
 Abrir terminal de comandos e digitar os comandos: 
 
@@ -52,7 +79,7 @@ export JAVA_HOME= /usr/java/jdk1.7.0_05/
 export PATH=$PATH:$JAVA_HOME/bin
 ```
 
-### Clonar Repositório
+<h3 id="clonar-repositorio">Clonar Repositório</h3>
 
 Digitar o comando: 
 
@@ -60,7 +87,7 @@ Digitar o comando:
  mvn clean install
 ```
 
-### Executar Maven
+<h3 id="executar-maven">Executar Maven</h3>
 
 Digitar o comando: 
 
@@ -68,7 +95,7 @@ Digitar o comando:
  mvn clean install
 ```
 
-### Iniciar aplicação
+#### Iniciar aplicação
 
 Digitar o comando: 
 
@@ -107,3 +134,7 @@ Please make sure to update tests as appropriate.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+# badges
+
+# Liceca
