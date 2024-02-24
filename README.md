@@ -1,7 +1,7 @@
 # Transporta Aí
 
 <p align='center'>
-    <img src="https://shorturl.at/osGZ8" alt="Foto Gabriel Mendes" />
+    <img src="/img/logo.png" alt="Foto Gabriel Mendes" />
 </p>
 
 <p align='center'>
