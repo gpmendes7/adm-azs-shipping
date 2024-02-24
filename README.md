@@ -1,11 +1,8 @@
 # Transporta Aí
 
-
 <p align='center'>
-    <img src="/img/logo.png" alt="Foto Gabriel Mendes" />
+    <img src="https://shorturl.at/osGZ8" alt="Foto Gabriel Mendes" />
 </p>
-
-![MarineGEO circle logo](/img/logo.png "MarineGEO logo")
 
 <p align='center'>
     <img src="https://img.shields.io/badge/status-concluído-green" />    
