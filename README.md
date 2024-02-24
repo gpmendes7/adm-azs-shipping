@@ -152,7 +152,9 @@ Ou passando os parâmetros diretamente na requisição :
 * PostMan
 
 <h3 id="autores">Autores</h3>
-[<img loading="lazy" src="https://avatars.githubusercontent.com/u/12829540?v=4" width=115><br><sub>Gabriel Mendes</sub>](https://github.com/gpmendes7)
+
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/12829540?v=4" width=115><br><sub>Gabriel Mendes</sub>](https://github.com/gpmendes7) | 
+| :---: | 
 
 <h3 id="licenca">Licença</h3>
 
