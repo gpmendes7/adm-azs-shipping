@@ -1,7 +1,7 @@
 # Transporta Aí
 
 <p align='center'>
-    <img src="/img/logo.png" alt="Foto Gabriel Mendes" />
+    <img src="https://drive.google.com/file/d/1GU4wUyBPnhCotJG20ftQyqkJiJqHL-gJ/view" alt="Foto Gabriel Mendes" />
 </p>
 
 <p align='center'>
