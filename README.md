@@ -7,8 +7,12 @@
 <p align='center'>
     <img src="https://img.shields.io/badge/status-concluído-green" />    
     <img src="https://img.shields.io/badge/java-17.0.6-blue" />
+    <img src="https://img.shields.io/badge/junit-5.9.2-lightgray" />
+    <img src="https://img.shields.io/badge/springboot-3.2.2-red" />
     <img src="https://img.shields.io/badge/maven-3.8.3-yellow" />
-    <img src="https://img.shields.io/badge/lincença-mit-blue" />
+    <img src="https://img.shields.io/badge/modelmapper-3.2.0-pink" />
+    <img src="https://img.shields.io/badge/springdoc-3.2.0-purple" />
+    <img src="https://img.shields.io/badge/lincença-mit-lightblue" />
 </p>
 
 ## Índice
@@ -20,6 +24,8 @@
   <li><a href="#linux">Linux</a></li>
   <li><a href="#clonar-repositorio">Clonar Repositório</a></li>
   <li><a href="#executar-maven">Excecutar Maven</a></li>
+  <li><a href="#tecnicas">Técnicas e tecnologias utilizadas</a></li>
+  <li><a href="#licenca">Licença</a></li>
 </ul>
 
 <h2 id="descricao">Descrição</h2>
@@ -100,38 +106,19 @@ Digitar o comando:
  mvn spring-boot:run
 ```
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+<h3 id="tecnicas">Técnicas e tecnologias utilizadas</h3>
 
-```bash
-pip install foobar
-```
+* Java 17
+* [JUnit](https://junit.org/junit5/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [H2](https://www.h2database.com/html/main.html)
+* [Maven](https://maven.apache.org/)
+* [Model Mapper](https://modelmapper.org/) 
+* [Lombok](https://projectlombok.org/)
+* MVC
+* IntelliJ IDEA
+* PostMan
 
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
+<h3 id="licenca">Licença</h3>
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-# badges
-
-# Liceca
