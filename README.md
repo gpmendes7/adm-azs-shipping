@@ -28,6 +28,8 @@
   <li><a href="#testar-listar">Testar endpoint de listar fretes</a></li>
   <li><a href="#testar-criar">Testar endpoint de criar frete</a></li>
   <li><a href="#tecnicas">Técnicas e tecnologias utilizadas</a></li>
+  <li><a href="#openapi">Documentação da API no OpenAPI</a></li>
+  <li><a href="#h2">Acessar banco de dados H2</a></li>
   <li><a href="#licenca">Licença</a></li>
 </ul>
 
@@ -147,9 +149,26 @@ Ou passando os parâmetros diretamente na requisição :
 * [Maven](https://maven.apache.org/)
 * [Model Mapper](https://modelmapper.org/) 
 * [Lombok](https://projectlombok.org/)
+* [OpenAPI](https://springdoc.org/)
 * MVC
 * IntelliJ IDEA
 * PostMan
+
+<h3 id="openapi">Documentação da API no OpenAPI</h3>
+
+Rodar no navegador o comando :
+
+```bash
+  http://localhost:8080/swagger-ui/index.html
+```
+
+<h3 id="h2">Acessar banco de dados H2</h3>
+
+Rodar no navegador o comando :
+
+```bash
+ http://localhost:8080/h2-console
+```
 
 <h3 id="autores">Autores</h3>
 
