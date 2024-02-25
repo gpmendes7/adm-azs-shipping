@@ -1,5 +1,3 @@
-# Transporta Aí
-
 <p align='center'>
     <img src="/img/logo.png" alt="Logo Transporta Aí" />
 </p>
@@ -15,40 +13,74 @@
     <img src="https://img.shields.io/badge/lincença-mit-lightblue" />
 </p>
 
-## Índice
+<h1>Sobre</h1>
+
+<strong>TrasportaAi</strong> é uma API REST desenvolvida em Java para gerenciamento de dados relacionados a fretes
+de cargas ou mercadorias.
+Dentre os dados armazenados podem ser citados:
+
+* cubagem da carga do frete (relação entre o peso e o volume da carga em m<sup>3</sup>)
+* peso da carga do frete (em kg)
+* distância do frete (em km<sup>2</sup>)
+* tempo do frete (em horas)
+
+<h2 id="tecnicas">Técnicas e tecnologias utilizadas</h2>
+
+* Java 17
+* [JUnit](https://junit.org/junit5/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [H2](https://www.h2database.com/html/main.html)
+* [Maven](https://maven.apache.org/)
+* [Model Mapper](https://modelmapper.org/)
+* [Lombok](https://projectlombok.org/)
+* [OpenAPI](https://springdoc.org/)
+* [Postman](https://www.postman.com/)
+* MVC
+* IntelliJ IDEA
+* PostMan
+
+<h2 id="ambiente">Ambiente de desenvolvimento</h2>
+
+Para montar e rodar o ambiente de desenvolvimento pode-se 
+utilizar uma IDE como o IntelliJ IDEA ou o próprio terminal do
+sistema operacional.
 
 <ul>
-  <li><a href="#descricao">Descrição</a></li>
-  <li><a href="#instalacao">Instalação</a></li>
-  <li><a href="#windows">Windows</a></li>
-  <li><a href="#linux">Linux</a></li>
+  <li><a href="#java">Instalar java</a></li>
+  <li><a href="#maven">Instalar maven</a></li>
+  <li><a href="#javahome">Atualizar variável JAVA_HOME</a></li>
   <li><a href="#clonar-repositorio">Clonar Repositório</a></li>
-  <li><a href="#executar-maven">Excecutar Maven</a></li>
-  <li><a href="#iniciar">Iniciar aplicação</a></li>
-  <li><a href="#testar-listar">Testar endpoint de listar fretes</a></li>
-  <li><a href="#testar-criar">Testar endpoint de criar frete</a></li>
-  <li><a href="#tecnicas">Técnicas e tecnologias utilizadas</a></li>
+  <li><a href="#executar">Executar a aplicação</a></li>
+  <li><a href="#endpoints">Testando os endpoints</a></li>
   <li><a href="#openapi">Documentação da API no OpenAPI</a></li>
   <li><a href="#h2">Acessar banco de dados H2</a></li>
   <li><a href="#licenca">Licença</a></li>
 </ul>
 
-<h2 id="descricao">Descrição</h2>
+A seguir seguem-se algumas instruções para executar o ambiente
+diretamente pelo terminal do sistema operacional.
 
-API REST desenvolvida em Java para gerenciamento de dados relacionados a transportes e fretes.
+<h3 id="java">Instalar java</h3>
 
-
-<h2 id="instalacao">Instalação</h2>
-
-Instalar java e conferir versão instalada com o comando :
+Instalar java (versão 17 ou superior) e conferir versão instalada com o comando :
 
 ```bash
 java -version
 ```
 
+<h3 id="maven">Instalar maven</h3>
+
+Instalar maven e conferir versão instalada com o comando :
+
+```bash
+mvn -version
+```
+
+<h3 id="javahome">Atualizar JAVA_HOME</h3>
+
 Precisa atualizar a variável JAVA_HOME antes de rodar o Maven.
 
-<h3 id="windows">Windows</h3>
+<h4 id="windows">Windows</h4>
 
 Abrir o prompt de comandos ou o Windows PowerShell como adim e digitar o seguinte comando :
 
@@ -69,7 +101,7 @@ Conferir se o valor foi alterado com o comando:
 echo %JAVA_HOME%
 ```
 
-<h3 id="linux">Linux</h3>
+<h4 id="linux">Linux</h4>
 
 Abrir terminal de comandos e digitar os comandos: 
 
@@ -89,31 +121,39 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 <h3 id="clonar-repositorio">Clonar Repositório</h3>
 
-Digitar o comando: 
+```bash
+ git clone https://github.com/gpmendes7/adm-azs-shipping.git
+```
+
+<h3 id="executar">Executar a aplicação</h3>
+
+Para fazer o build da aplicação (baixar as dependências do projeto), digitar o comando: 
 
 ```bash
  mvn clean install
 ```
 
-<h3 id="executar-maven">Executar Maven</h3>
-
-Digitar o comando: 
+Para rodar os testes da aplicação, digitar o comando: :
 
 ```bash
- mvn clean install
+ mvn test
 ```
 
-<h3 id="iniciar">Iniciar aplicação</h3>
-
-Digitar o comando: 
+Para iniciar a aplicação, digitar o comando: 
 
 ```bash
  mvn spring-boot:run
 ```
 
-<h3 id="testar-listar">Testar endpoint de listar fretes</h3>
+<h3 id="endpoints">Testando os endpoints</h3>
 
-É possível testar com a ferramenta postman ou digitar o comando no prompt de comandos :
+É possível testar os endpoints com a ferramenta [postman](https://www.postman.com/) ou digitar comandos
+diretamente pelo terminal do sistema operacional.
+Em essência utiliza-se o [curl](https://shorturl.at/eknN1),
+uma ferramenta para transferência de dados entre cliente/servidor que usa vários protocolos como o HTTP e o FTP.
+
+
+<h4>Testando endpoint de listar fretes</h4>
 
 ```bash
   curl http://localhost:8080/api/v1/fretes
@@ -126,9 +166,7 @@ que, por default, page=0 e size=5 :
   curl -G -d "page=0" -d "size=100" http://localhost:8080/api/v1/fretes
 ```
 
-<h3 id="testar-criar">Testar endpoint de criar frete</h3>
-
-É possível testar com a ferramenta postman ou digitar o comando no prompt de comandos :
+<h4>Testando endpoint de criar frete</h4>
 
 ```bash
   curl -X POST http://localhost:8080/api/v1/fretes -H "Content-type:application/json" -d "{\"cubagem\":20.55, \"peso\":1000.00, \"distancia\":90.5, \"tempo\":2}"
@@ -140,20 +178,6 @@ Ou passando os parâmetros diretamente na requisição :
   curl "http://localhost:8080/api/v1/fretes?page=0&size=100"
 ```
 
-<h3 id="tecnicas">Técnicas e tecnologias utilizadas</h3>
-
-* Java 17
-* [JUnit](https://junit.org/junit5/)
-* [Spring Boot](https://spring.io/projects/spring-boot)
-* [H2](https://www.h2database.com/html/main.html)
-* [Maven](https://maven.apache.org/)
-* [Model Mapper](https://modelmapper.org/) 
-* [Lombok](https://projectlombok.org/)
-* [OpenAPI](https://springdoc.org/)
-* MVC
-* IntelliJ IDEA
-* PostMan
-
 <h3 id="openapi">Documentação da API no OpenAPI</h3>
 
 Rodar no navegador o comando :
@@ -164,7 +188,7 @@ Rodar no navegador o comando :
 
 <h3 id="h2">Acessar banco de dados H2</h3>
 
-Rodar no navegador o comando :
+Digitar no navegador a url :
 
 ```bash
  http://localhost:8080/h2-console
