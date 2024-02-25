@@ -1,20 +1,10 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:gerenciadordefrete_dev;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    driveClassName: org.h2.Driver
-    username: sa
-    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/frete_db
+    password: muitorico10
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    show-sql: true
-    properties:
-      hibernate:
-      format_sq: true
-  h2:
-    console:
-      enabled: true
-
-logging:
-  level:
-    com:
-      azship: DEBUG
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'

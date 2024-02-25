@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "Transporta Aí",
+                title = "TransportaAí",
                 description = "Implementar operações CRUD",
                 summary = "API para listar, buscar, remover, editar e deletar dados sobre fretes e transportes",
                 termsOfService = "T&C",
