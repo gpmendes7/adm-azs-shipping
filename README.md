@@ -95,7 +95,7 @@ sustituir &lt;diretorio&gt; por "C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10
 setx /m JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17.0.6.10-hotspot"
 ```
 
-Conferir se o valor foi alterado com o comando:
+Conferir se o valor foi alterado com o comando :
 
 ```bash
 echo %JAVA_HOME%
@@ -103,7 +103,7 @@ echo %JAVA_HOME%
 
 <h4 id="linux">Linux</h4>
 
-Abrir terminal de comandos e digitar os comandos: 
+Abrir terminal de comandos e digitar os comandos : 
 
 
 ```bash
@@ -112,7 +112,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 ```
 
 Se por exemplo, o jdk está instalado no diretório /usr/java/jdk1.7.0_05/,
-sustituir <path to JDK> por /usr/java/jdk1.7.0_05/:
+sustituir <path to JDK> por /usr/java/jdk1.7.0_05/ :
 
 ```bash
 export JAVA_HOME= /usr/java/jdk1.7.0_05/
@@ -127,19 +127,19 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 <h3 id="executar">Executar a aplicação</h3>
 
-Para fazer o build da aplicação (baixar as dependências do projeto), digitar o comando: 
+Para fazer o build da aplicação (baixar as dependências do projeto), digitar o comando : 
 
 ```bash
  mvn clean install
 ```
 
-Para rodar os testes da aplicação, digitar o comando: :
+Para rodar os testes da aplicação, digitar o comando :
 
 ```bash
  mvn test
 ```
 
-Para iniciar a aplicação, digitar o comando: 
+Para iniciar a aplicação, digitar o comando : 
 
 ```bash
  mvn spring-boot:run
